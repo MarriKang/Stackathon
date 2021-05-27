@@ -8,8 +8,8 @@ export default class TitleScene extends Phaser.Scene {
   preload() {
     const font = new WebFontFile(this.load, "Indie Flower");
     this.load.addFile(font);
-    this.load.image('title', 'assets/Title screen.png')
-    this.load.image('start', 'assets/Start button.png')
+    this.load.image('title', 'public/assets/Title screen.png')
+    this.load.image('start', 'public/assets/Start button.png')
   }
 
   create() {

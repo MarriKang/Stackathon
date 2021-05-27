@@ -8,7 +8,7 @@ export default class Stage2 extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('win', 'assets/Win.png')
+        this.load.image('win', 'public/assets/Win.png')
     }
 
     create() {

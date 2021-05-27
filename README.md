@@ -6,6 +6,11 @@ A Phaser 3 Project Template
 
 We need [Node.js](https://nodejs.org) to install and run scripts.
 
+## About this game
+A short, visual novel styled game where you have to do exactly as the title states - don't be a jerk! 
+
+Use your mouse to make choices and advance dialogue by clicking on the dialogue box.
+
 ## Install and run
 
 Run next commands in your terminal:

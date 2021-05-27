@@ -9,7 +9,7 @@ export default class GameOver1 extends Phaser.Scene {
 
     preload() {
         this.load.addFile(new WebFontFile(this.load, 'Indie Flower'))
-        this.load.image('gameOver', 'assets/Game over.png')
+        this.load.image('gameOver', 'public/assets/Game over.png')
     }
 
     create() {
