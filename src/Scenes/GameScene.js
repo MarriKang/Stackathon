@@ -33,11 +33,6 @@ export default class GameScene extends Phaser.Scene {
         this.dialogueArr = ['Oh! Farfalle...yes, I\'m afraid \nsomething terrible has happened.', 'I\'ve lost my favorite ring. \nI can\'t find it anywhere!', 'That sucks.', 'Yes...but there\'s nothing I can do \nabout it.', 'I guess I could use a hug...']
         this.index = 0;
 
-        // this.text = this.add.text(400, 250, 'Game screen', {
-        //     fontFamily: '"Indie Flower"',
-        //     fontSize: '30px'
-        // })
-
         const background = this.add.image(0, 0, 'bg').setOrigin(0)
         this.spriteLeft = this.add.sprite(100, 180, 'farfalle').setOrigin(0.2)
         this.spriteRight = this.add.sprite(500, 180, 'susie').setOrigin(0.2)
@@ -49,9 +44,6 @@ export default class GameScene extends Phaser.Scene {
         this.dialogueBox.setOrigin(0.2, 0.5)
         this.dialogueBox.setInteractive();
 
-        // this.text = this.add.text(400, 250, 'Game screen', {
-        //     color: '#000000'
-        // })
 
         this.text = this.add.text(180, 420, 'Hey. Are you crying?', {
             fontFamily: '"Indie Flower"',
@@ -89,10 +81,6 @@ export default class GameScene extends Phaser.Scene {
         } else if (this.index === 2) {
             this.farfalleTag.visible = true;
             this.susieTag.visible = false;
-            // console.log("whoa")
-            // this.oldSprite = this.spriteTest
-            // this.oldSprite.visible = false;
-            // this.spriteTest = this.add.sprite(40, 200, 'p1').setScale(0.5).setOrigin(0.2)
             this.dialogueBox.set
         } else if (this.index === 3) {
             this.farfalleTag.visible = false;
@@ -123,8 +111,6 @@ export default class GameScene extends Phaser.Scene {
         this.choice2.setInteractive({ useHandCursor: true })
         this.choice2.on('pointerdown', () => {
             this.index = 0;
-            // this.oldSprite.visible = false;
-            // this.spriteTest.visible = false;
             this.scene.switch('Stage2')
         })
     }
