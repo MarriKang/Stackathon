@@ -22,7 +22,7 @@ export default class GameScene extends Phaser.Scene {
         this.load.addFile(new WebFontFile(this.load, 'Indie Flower'))
         this.load.image('farfalle', 'public/assets/Farfalle.png');
         this.load.image('susie', 'public/assets/Susie.png')
-        this.load.image('dialogueBox', 'public/assets/Textbox.png')
+        this.load.image('dialogueBox', 'public/assets/textbox.png')
         this.load.image('bg', 'public/assets/BG.png')
         this.load.image('susieTag', 'public/assets/Susie tag.png')
         this.load.image('farfalleTag', 'public/assets/Farfalle tag.png')
