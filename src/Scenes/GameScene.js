@@ -81,7 +81,7 @@ export default class GameScene extends Phaser.Scene {
         } else if (this.index === 2) {
             this.farfalleTag.visible = true;
             this.susieTag.visible = false;
-            this.dialogueBox.set
+            this.dialogueBox.set()
         } else if (this.index === 3) {
             this.farfalleTag.visible = false;
             this.susieTag.visible = true;
